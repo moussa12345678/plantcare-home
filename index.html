@@ -19,60 +19,14 @@
         .nav-bar.scrolled { padding: 14px 40px; background: rgba(10, 10, 10, 0.95); }    
         .nav-brand { display: flex; align-items: center; gap: 12px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; color: white; }    
         .nav-brand svg { width: 32px; height: 32px; }    
-        .back-btn { width: 44px; height: 44px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; cursor: pointer; transition: all 0.3s ease; }    
-        .back-btn:hover { background: rgba(16, 185, 129, 0.2); border-color: var(--emerald); transform: scale(1.1); box-shadow: 0 0 20px var(--emerald-glow); }    
-        .hero { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 140px 20px 80px; position: relative; }    
-        .hero-icon { width: 100px; height: 100px; border-radius: 30px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05)); border: 1px solid rgba(16, 185, 129, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 30px; animation: pulseGlow 3s infinite ease-in-out; position: relative; }    
-        .hero-icon::before { content: ''; position: absolute; inset: -4px; border-radius: 32px; background: linear-gradient(135deg, var(--emerald), transparent, var(--emerald)); opacity: 0.3; animation: rotateBorder 4s linear infinite; }    
-        @keyframes rotateBorder { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }    
-        @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.2); } 50% { box-shadow: 0 0 60px rgba(16, 185, 129, 0.4); } }    
-        .hero-icon svg { width: 48px; height: 48px; color: var(--emerald); position: relative; z-index: 1; }    
+        .hero { min-height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 140px 20px 60px; position: relative; }    
         .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; color: white; letter-spacing: -0.03em; margin-bottom: 16px; background: linear-gradient(135deg, #ffffff, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }    
-        .hero p { font-size: 1.1rem; color: #6b7280; max-width: 500px; }    
-        .hero-date { margin-top: 20px; padding: 8px 20px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 100px; font-size: 0.85rem; color: var(--emerald); font-weight: 500; }    
-        .scroll-indicator { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; animation: bounce 2s infinite; }    
-        .scroll-indicator span { font-size: 0.75rem; color: #6b7280; text-transform: uppercase; letter-spacing: 2px; }    
-        .scroll-indicator .arrow { width: 20px; height: 20px; border-right: 2px solid var(--emerald); border-bottom: 2px solid var(--emerald); transform: rotate(45deg); }    
-        @keyframes bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(10px); } }    
         .content { max-width: 800px; margin: 0 auto; padding: 0 24px 100px; }    
-        .progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 3px; z-index: 101; background: rgba(255, 255, 255, 0.05); }    
-        .progress-bar { height: 100%; background: linear-gradient(90deg, var(--emerald), #34d399); width: 0%; transition: width 0.1s ease; box-shadow: 0 0 10px var(--emerald-glow); }    
-        .section-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 24px; padding: 40px; margin-bottom: 32px; backdrop-filter: blur(20px); position: relative; overflow: hidden; opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }    
-        .section-card.visible { opacity: 1; transform: translateY(0); }    
-        .section-card:hover { border-color: rgba(16, 185, 129, 0.2); background: rgba(255, 255, 255, 0.03); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px rgba(16, 185, 129, 0.05); }    
-        .section-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--emerald), transparent); opacity: 0; transition: opacity 0.3s ease; }    
-        .section-card:hover::before { opacity: 1; }    
-        .section-number { position: absolute; top: 20px; right: 24px; font-family: 'Space Grotesk', sans-serif; font-size: 4rem; font-weight: 800; color: rgba(16, 185, 129, 0.05); line-height: 1; }    
-        .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }    
-        .section-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }    
-        .section-icon svg { width: 22px; height: 22px; color: var(--emerald); }    
-        .section-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: white; letter-spacing: -0.02em; }    
-        .section-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: #e5e7eb; margin-top: 24px; margin-bottom: 10px; padding-left: 14px; border-left: 3px solid var(--emerald); }    
-        .section-card p { color: #9ca3af; font-size: 0.95rem; margin-bottom: 12px; }    
-        .section-card strong { color: #e5e7eb; font-weight: 600; }    
-        .section-card ul { list-style: none; padding: 0; margin: 16px 0; }    
-        .section-card ul li { position: relative; padding-left: 24px; margin-bottom: 14px; color: #9ca3af; font-size: 0.95rem; }    
-        .section-card ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; border-radius: 50%; background: var(--emerald); box-shadow: 0 0 8px var(--emerald-glow); }    
-        .info-item { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.04); border-radius: 16px; padding: 20px 24px; margin-bottom: 16px; transition: all 0.3s ease; }    
-        .info-item:hover { background: rgba(16, 185, 129, 0.03); border-color: rgba(16, 185, 129, 0.1); }    
-        .info-item-title { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; color: white; font-weight: 600; font-size: 0.95rem; }    
-        .info-item-title .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald); }    
-        .info-item p { color: #6b7280; margin-bottom: 0; padding-left: 18px; }    
-        .affiliate-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: rgba(234, 179, 8, 0.1); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: 100px; font-size: 0.8rem; color: #fbbf24; font-weight: 500; margin-bottom: 16px; }    
-        .footer { text-align: center; padding: 60px 24px; border-top: 1px solid rgba(255, 255, 255, 0.05); margin-top: 40px; }    
-        .footer-logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.3rem; color: white; margin-bottom: 12px; }    
-        .footer p { color: #4b5563; font-size: 0.85rem; }    
-        .leaf { position: fixed; pointer-events: none; z-index: -1; opacity: 0.1; animation: fall linear infinite; }    
-        @keyframes fall { 0% { transform: translateY(-100vh) rotate(0deg); } 100% { transform: translateY(100vh) rotate(720deg); } }    
-        @media (max-width: 768px) { .nav-bar { padding: 16px 20px; } .section-card { padding: 28px 24px; border-radius: 20px; } .hero { padding: 120px 20px 60px; min-height: 50vh; } .content { padding: 0 16px 80px; } }    
-        .cursor-blink { display: inline-block; width: 3px; height: 1em; background: var(--emerald); margin-left: 4px; animation: blink 1s infinite; vertical-align: text-bottom; }    
-        @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }    
-        .glow-line { width: 60px; height: 3px; background: linear-gradient(90deg, var(--emerald), transparent); border-radius: 2px; margin: 20px 0; }    
-        .toc { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 48px; opacity: 0; transform: translateY(20px); transition: all 0.8s ease 0.3s; }    
-        .toc.visible { opacity: 1; transform: translateY(0); }    
-        .toc-item { padding: 16px 20px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 14px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 10px; text-decoration: none; color: #9ca3af; font-size: 0.9rem; }    
-        .toc-item:hover { background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.3); color: white; transform: translateX(4px); }    
-        .toc-num { width: 28px; height: 28px; border-radius: 8px; background: rgba(16, 185, 129, 0.1); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; color: var(--emerald); flex-shrink: 0; }
+        .section-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 24px; padding: 40px; margin-bottom: 32px; backdrop-filter: blur(20px); }    
+        .section-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 20px; border-bottom: 1px solid var(--emerald); display: inline-block; padding-bottom: 5px; }    
+        .section-card p { color: #9ca3af; font-size: 1rem; margin-bottom: 15px; }    
+        .section-card h3 { color: #e5e7eb; margin-top: 20px; margin-bottom: 10px; }    
+        .footer { text-align: center; padding: 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
     </style>  </head>    
 <body>    
     <div class="bg-gradient"></div>    
@@ -81,9 +35,6 @@
         <div class="orb"></div>    
         <div class="orb"></div>    
     </div>  
-<div class="progress-container">    
-    <div class="progress-bar" id="progressBar"></div>    
-</div>    
 <nav class="nav-bar" id="navbar">    
     <div class="nav-brand">    
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">    
@@ -91,224 +42,57 @@
         </svg>    
         PlantCare AI    
     </div>    
-    <button class="back-btn" onclick="history.back()">    
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">    
-            <path d="M19 12H5M12 19l-7-7 7-7"/>    
-        </svg>    
-    </button>    
 </nav>    
 <section class="hero">    
-    <div class="hero-icon">    
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">    
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>    
-            <path d="M9 12l2 2 4-4"/>    
-        </svg>    
-    </div>    
     <h1>Privacy Policy</h1>    
     <p>Your privacy is our priority. Learn how PlantCare AI protects your data.</p>    
-    <div class="hero-date">Last Updated: May 20, 2026</div>    
-    <div class="scroll-indicator">    
-        <span>Scroll</span>    
-        <div class="arrow"></div>    
-    </div>    
 </section>    
 <main class="content">    
-    <div class="toc" id="toc">    
-        <a href="#section1" class="toc-item">    
-            <span class="toc-num">01</span>    
-            Introduction    
-        </a>    
-        <a href="#section2" class="toc-item">    
-            <span class="toc-num">02</span>    
-            Data Collection    
-        </a>    
-        <a href="#section3" class="toc-item">    
-            <span class="toc-num">03</span>    
-            Third-Party Services    
-        </a>    
-        <a href="#section4" class="toc-item">    
-            <span class="toc-num">04</span>    
-            Policy Changes    
-        </a>    
-    </div>    
-<section class="section-card" id="section1">    
-    <span class="section-number">01</span>    
-    <div class="section-header">    
-        <div class="section-icon">    
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">    
-                <circle cx="12" cy="12" r="10"/>    
-                <path d="M12 16v-4M12 8h.01"/>    
-            </svg>    
-        </div>    
-        <h2>Introduction</h2>    
-    </div>    
-    <div class="glow-line"></div>    
-    <p>    
-        Welcome to <strong>PlantCare AI</strong>. Your privacy is strongly protected. This Privacy Policy describes how we handle the information collected by this application.    
-    </p>    
-    <p>    
-        We believe in complete transparency about how your data is used, stored, and protected. This document outlines our practices in detail.    
-    </p>    
-</section>    
-<section class="section-card" id="section2">    
-    <span class="section-number">02</span>    
-    <div class="section-header">    
-        <div class="section-icon">    
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>    
-                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>    
-                <line x1="12" y1="22.08" x2="12" y2="12"/>    
-            </svg>    
-        </div>    
-        <h2>Data Collection & Storage</h2>    
-    </div>    
-    <div class="glow-line"></div>    
-    <div class="info-item">    
-        <div class="info-item-title">    
-            <span class="dot"></span>    
-            Local Storage    
-        </div>    
-        <p>    
-            All your data, including your plant library, health records, and settings, are stored locally on your device. We do not maintain any central servers or databases to store your personal information.    
-        </p>    
-    </div>    
-    <div class="info-item">    
-        <div class="info-item-title">    
-            <span class="dot"></span>    
-            API Keys    
-        </div>    
-        <p>    
-            If you provide an API key for AI services, it is encrypted using <strong>AES</strong> and stored securely on your local device using native secure storage mechanisms. It is never transmitted to our servers (because we don't have any). It is only used to directly communicate with the AI provider you selected (e.g., Google Gemini, OpenRouter, or OpenAI).    
-        </p>    
-    </div>    
-    <div class="info-item">    
-        <div class="info-item-title">    
-            <span class="dot"></span>    
-            Camera & Images    
-        </div>    
-        <p>    
-            The app requires camera access to scan plants. Images captured are sent directly to the selected AI provider to identify the plant or analyze its health. We do not store, view, or retain copies of your images.    
-        </p>    
-    </div>    
-</section>    
-<section class="section-card" id="section3">    
-    <span class="section-number">03</span>    
-    <div class="section-header">    
-        <div class="section-icon">    
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">    
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>    
-                <circle cx="9" cy="7" r="4"/>    
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>    
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>    
-            </svg>    
-        </div>    
-        <h2>Third-Party Services & Affiliate Links</h2>    
-    </div>    
-    <div class="glow-line"></div>    
-    <p>We use third-party services which have their own privacy policies:</p>    
-    <ul>    
-        <li>    
-            <strong>AI Providers:</strong> Services like Google Gemini or OpenAI process the images and text prompts to return plant data. Please refer to their respective privacy policies to understand how they handle your data.    
-        </li>    
-        <li>    
-            <strong>AdMob:</strong> If advertisements are configured in your version of the application, we may use Google AdMob to display advertisements. AdMob may use device identifiers and other information for serving appropriate ads. You can review Google's advertising privacy policies for details.    
-        </li>    
-    </ul>    
-    <h3>Amazon Affiliate Disclosure</h3>    
-    <div class="affiliate-badge">    
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">    
-            <circle cx="12" cy="12" r="10"/>    
-            <path d="M12 16v-4M12 8h.01"/>    
-        </svg>    
-        Affiliate Partnership    
-    </div>    
-    <p>    
-        PlantCare AI is a participant in the <strong>Amazon Services LLC Associates Program</strong>, an affiliate advertising program designed to provide a means for sites and apps to earn advertising fees by advertising and linking to Amazon.com and affiliated sites.     
-    </p>    
-    <p>    
-        When you click on recommended care products (such as fertilizers, pesticides, or accessories) within this application, you may be redirected to Amazon where we earn a small commission from qualifying purchases at <strong>absolutely no extra cost to you</strong>.    
-    </p>    
-</section>    
-<section class="section-card" id="section4">    
-    <span class="section-number">04</span>    
-    <div class="section-header">    
-        <div class="section-icon">    
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">    
-                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>    
-                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>    
-            </svg>    
-        </div>    
-        <h2>Changes to this Policy</h2>    
-    </div>    
-    <div class="glow-line"></div>    
-    <p>    
-        We may update this privacy policy from time to time. Since the app functions primarily offline/locally, material changes will apply in subsequent app updates.    
-    </p>    
-    <p>    
-        We encourage you to review this policy periodically to stay informed about how we protect your information.    
-    </p>    
-</section>
+    <section class="section-card">    
+        <h2>Introduction / مقدمة</h2>    
+        <p>Welcome to PlantCare AI. We are dedicated to maintaining the highest privacy and safety standards for our users. This Privacy Policy describes transparently how data is handled, processed, and transmitted by this application to align with Google Play Data Safety requirements.</p>
+        <p>مرحباً بكم في PlantCare AI. نحن ملتزمون بأعلى معايير الخصوصية وأمان البيانات. توضح سياسة الخصوصية هذه بشفافية كيفية معالجة وإرسال البيانات لتتوافق مع متطلبات Google Play لتوفير بيئة استخدام آمنة وموثوقة.</p>
+    </section>
+
+    <section class="section-card">
+        <h2>Data Safety & Transmission / سلامة ونقل البيانات</h2>
+        <p>Unlike static local-only apps, PlantCare AI utilizes network-based features to identify plants, analyze health, and support development. Here is the accurate breakdown of our data safety actions:</p>
+        
+        <h3>1. Photos & Captured Images / الصور الملتقطة</h3>
+        <p><strong>Data Type:</strong> Photos and video frames.</p>
+        <p><strong>Handling:</strong> When you capture/upload a plant photo to scan or analyze its health, this image is transmitted securely over HTTPS directly to your selected third-party AI service (e.g., Google Gemini, OpenRouter, or OpenAI).</p>
+        <p><strong>Retention:</strong> The application publisher does not collect, receive, or store your photos on any proprietary servers. The chosen AI services handle images according to their respective privacy terms.</p>
+
+        <h3>2. Text Prompts & User Queries / المدخلات النصية</h3>
+        <p><strong>Data Type:</strong> User text messages and plant health questions.</p>
+        <p><strong>Handling:</strong> Text messages entered in the AI Doctor screen are sent over secure network connections to process appropriate diagnoses and recommend treatment actions.</p>
+        <p><strong>Retention:</strong> Plant diaries and clinical histories are saved strictly off-line in your device's private local state. Only the active context prompts are sent to selected AI services.</p>
+
+        <h3>3. Device Identifiers & Performance Logs / معرفات الأجهزة والتحليلات</h3>
+        <p><strong>Data Type:</strong> Device IDs, approximate IP, ad interaction metrics, and crash diagnostics.</p>
+        <p><strong>Handling:</strong> If mobile ads are present, Google AdMob and Firebase services may gather anonymous device identifiers (such as Android Advertising ID - AAID) and performance events to serve suitable, non-intrusive advertisements and monitor application crashes.</p>
+    </section>
+
+    <section class="section-card">
+        <h2>Security & Local Storage / التشغيل والتخزين المحلي</h2>
+        <h3>Encryption & Keys:</h3>
+        <p>If you provide a personal API key for custom AI setups, the key is encrypted using AES-256 and stored using secure Capacitor native persistent containers. It is never exposed or collected.</p>
+        <h3>Offline Records:</h3>
+        <p>All details about your personal local plant library, custom watering timer preferences, and reminder logs are stored offline inside standard private storage.</p>
+    </section>
+
+    <section class="section-card">
+        <h2>Affiliate Disclosure / برنامج التسويق بالعمولة</h2>
+        <p>PlantCare AI is a participant in the Amazon Services LLC Associates Program. Recommended items in our Smart Store are generated using affiliate tags. If you make purchases via these outbound links, we may earn a small referral commission at no additional cost to you. This support helps fund ongoing maintenance and improvements.</p>
+    </section>
+
+    <section class="section-card">
+        <h2>Changes / تغييرات السياسة</h2>
+        <p>We reserve the right to refine this policy to reflect any regulatory changes. Since the app functions locally, subsequent updates will deliver policy revisions directly inside the app.</p>
+    </section>
 </main>    
 <footer class="footer">    
-    <div class="footer-logo">🌿 PlantCare AI</div>    
     <p>© 2025 PlantCare AI. All rights reserved.</p>    
-    <p style="margin-top: 8px;">Your plants deserve the best care. Your data deserves the best protection.</p>    
 </footer>    
-<script>    
-    window.addEventListener('scroll', () => {    
-        const scrollTop = window.scrollY;    
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;    
-        const progress = (scrollTop / docHeight) * 100;    
-        document.getElementById('progressBar').style.width = progress + '%';    
-        const navbar = document.getElementById('navbar');    
-        if (scrollTop > 50) { navbar.classList.add('scrolled'); } else { navbar.classList.remove('scrolled'); }    
-    });    
-    const observer = new IntersectionObserver((entries) => {    
-        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } });    
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });    
-    document.querySelectorAll('.section-card, .toc').forEach(el => { observer.observe(el); });    
-    document.querySelectorAll('.toc-item').forEach(item => {    
-        item.addEventListener('click', (e) => {    
-            e.preventDefault();    
-            const targetId = item.getAttribute('href').substring(1);    
-            const target = document.getElementById(targetId);    
-            if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }    
-        });    
-    });    
-    function createLeaves() {    
-        const leafSVGs = [`<svg width="20" height="20" viewBox="0 0 24 24" fill="rgba(16,185,129,0.3)"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/></svg>`];    
-        for (let i = 0; i < 8; i++) {    
-            const leaf = document.createElement('div'); leaf.className = 'leaf'; leaf.innerHTML = leafSVGs[0];    
-            leaf.style.left = Math.random() * 100 + 'vw'; leaf.style.animationDuration = (15 + Math.random() * 20) + 's';    
-            leaf.style.animationDelay = Math.random() * 15 + 's'; leaf.style.opacity = 0.05 + Math.random() * 0.1;    
-            document.body.appendChild(leaf);    
-        }    
-    }    
-    createLeaves();    
-    const canvas = document.createElement('canvas'); canvas.style.position = 'fixed'; canvas.style.top = '0'; canvas.style.left = '0'; canvas.style.width = '100%'; canvas.style.height = '100%'; canvas.style.zIndex = '-1'; canvas.style.pointerEvents = 'none'; canvas.style.opacity = '0.3'; document.body.appendChild(canvas);    
-    const ctx = canvas.getContext('2d'); let particles = []; let mouseX = 0; let mouseY = 0;    
-    function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }    
-    resizeCanvas(); window.addEventListener('resize', resizeCanvas);    
-    document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });    
-    class Particle {    
-        constructor() { this.reset(); }    
-        reset() { this.x = Math.random() * canvas.width; this.y = Math.random() * canvas.height; this.size = Math.random() * 2 + 0.5; this.speedX = (Math.random() - 0.5) * 0.5; this.speedY = (Math.random() - 0.5) * 0.5; this.opacity = Math.random() * 0.5 + 0.1; }    
-        update() { this.x += this.speedX; this.y += this.speedY; if (this.x < 0 || this.x > canvas.width) this.speedX *= -1; if (this.y < 0 || this.y > canvas.height) this.speedY *= -1; }    
-        draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fillStyle = `rgba(16, 185, 129, ${this.opacity})`; ctx.fill(); }    
-    }    
-    for (let i = 0; i < 50; i++) { particles.push(new Particle()); }    
-    function animateParticles() {    
-        ctx.clearRect(0, 0, canvas.width, canvas.height);    
-        particles.forEach(p => { p.update(); p.draw(); });    
-        for (let i = 0; i < particles.length; i++) {    
-            for (let j = i + 1; j < particles.length; j++) {    
-                const dx = particles[i].x - particles[j].x; const dy = particles[i].y - particles[j].y; const dist = Math.sqrt(dx * dx + dy * dy);    
-                if (dist < 120) { ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y); ctx.strokeStyle = `rgba(16, 185, 129, ${0.1 * (1 - dist / 120)})`; ctx.lineWidth = 0.5; ctx.stroke(); }    
-            }    
-            const dxM = particles[i].x - mouseX; const dyM = particles[i].y - mouseY; const distM = Math.sqrt(dxM * dxM + dyM * dyM);    
-            if (distM < 150) { ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(mouseX, mouseY); ctx.strokeStyle = `rgba(16, 185, 129, ${0.15 * (1 - distM / 150)})`; ctx.lineWidth = 0.5; ctx.stroke(); }    
-        }    
-        requestAnimationFrame(animateParticles);    
-    }    
-    animateParticles();    
-</script>  </body>    
+</body>    
 </html>
