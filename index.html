@@ -1,7 +1,7 @@
 <!DOCTYPE html>  <html lang="en">    <head>    
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>PlantCare AI - Privacy Policy</title>    
+    <title>PlantCare AI - Privacy Policy & Legal Compliance</title>    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/index.css">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.0/index.css">    
     <style>    
@@ -9,86 +9,70 @@
         :root { --emerald: #10b981; --emerald-glow: rgba(16, 185, 129, 0.3); --bg: #0a0a0a; --card-bg: rgba(255, 255, 255, 0.02); --card-border: rgba(255, 255, 255, 0.06); }
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: #d1d5db; overflow-x: hidden; line-height: 1.7; }    
         .bg-gradient { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background: radial-gradient(ellipse at 20% 50%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(16, 185, 129, 0.05) 0%, transparent 40%), radial-gradient(ellipse at 50% 80%, rgba(6, 78, 59, 0.08) 0%, transparent 50%); }    
-        .floating-orbs { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }    
-        .orb { position: absolute; border-radius: 50%; filter: blur(80px); animation: floatOrb 20s infinite ease-in-out; opacity: 0.4; }    
-        .orb:nth-child(1) { width: 400px; height: 400px; background: rgba(16, 185, 129, 0.15); top: -200px; right: -100px; animation-delay: 0s; }    
-        .orb:nth-child(2) { width: 300px; height: 300px; background: rgba(6, 95, 70, 0.2); bottom: -150px; left: -100px; animation-delay: -7s; }    
-        .orb:nth-child(3) { width: 200px; height: 200px; background: rgba(16, 185, 129, 0.1); top: 50%; left: 50%; animation-delay: -14s; }    
-        @keyframes floatOrb { 0%, 100% { transform: translate(0, 0) scale(1); } 25% { transform: translate(50px, -30px) scale(1.1); } 50% { transform: translate(-20px, 40px) scale(0.9); } 75% { transform: translate(30px, 20px) scale(1.05); } }    
-        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.3s ease; }    
-        .nav-bar.scrolled { padding: 14px 40px; background: rgba(10, 10, 10, 0.95); }    
+        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }    
         .nav-brand { display: flex; align-items: center; gap: 12px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; color: white; }    
-        .nav-brand svg { width: 32px; height: 32px; }    
-        .hero { min-height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 140px 20px 60px; position: relative; }    
-        .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; color: white; letter-spacing: -0.03em; margin-bottom: 16px; background: linear-gradient(135deg, #ffffff, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }    
-        .content { max-width: 800px; margin: 0 auto; padding: 0 24px 100px; }    
+        .hero { min-height: 40vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 20px 40px; position: relative; }    
+        .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; color: white; letter-spacing: -0.03em; margin-bottom: 16px; background: linear-gradient(135deg, #ffffff, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }    
+        .content { max-width: 900px; margin: 0 auto; padding: 0 24px 100px; }    
         .section-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 24px; padding: 40px; margin-bottom: 32px; backdrop-filter: blur(20px); }    
-        .section-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 20px; border-bottom: 1px solid var(--emerald); display: inline-block; padding-bottom: 5px; }    
-        .section-card p { color: #9ca3af; font-size: 1rem; margin-bottom: 15px; }    
-        .section-card h3 { color: #e5e7eb; margin-top: 20px; margin-bottom: 10px; }    
-        .footer { text-align: center; padding: 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+        .section-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 700; color: #10b981; margin-bottom: 24px; border-left: 4px solid #10b981; padding-left: 15px; }    
+        .section-card p { color: #d1d5db; font-size: 1.05rem; margin-bottom: 18px; }    
+        .section-card ul { list-style: none; padding: 0; }    
+        .section-card ul li { position: relative; padding-left: 25px; margin-bottom: 15px; color: #d1d5db; }    
+        .section-card ul li::before { content: '→'; position: absolute; left: 0; color: #10b981; font-weight: bold; }    
+        .arabic-text { direction: rtl; font-family: 'Inter', sans-serif; margin-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 15px; color: #9ca3af; }    
+        .disclaimer-box { border: 1px solid #ef4444; background: rgba(239, 68, 68, 0.05); }    
+        .disclaimer-box h2 { color: #ef4444; border-left-color: #ef4444; }    
+        .footer { text-align: center; padding: 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); color: #6b7280; font-size: 0.9rem; }
+        strong { color: #fff; }
     </style>  </head>    
 <body>    
     <div class="bg-gradient"></div>    
-    <div class="floating-orbs">    
-        <div class="orb"></div>    
-        <div class="orb"></div>    
-        <div class="orb"></div>    
-    </div>  
-<nav class="nav-bar" id="navbar">    
-    <div class="nav-brand">    
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">    
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#10b981"/>    
-        </svg>    
-        PlantCare AI    
-    </div>    
+<nav class="nav-bar">    
+    <div class="nav-brand">🌿 PlantCare AI</div>    
 </nav>    
 <section class="hero">    
-    <h1>Privacy Policy</h1>    
-    <p>Your privacy is our priority. Learn how PlantCare AI protects your data.</p>    
+    <h1>Privacy Policy & Legal Compliance</h1>    
+    <p>سياسة الخصوصية والامتثال القانوني</p>    
 </section>    
 <main class="content">    
     <section class="section-card">    
-        <h2>Introduction / مقدمة</h2>    
-        <p>Welcome to PlantCare AI. We are dedicated to maintaining the highest privacy and safety standards for our users. This Privacy Policy describes transparently how data is handled, processed, and transmitted by this application to align with Google Play Data Safety requirements.</p>
-        <p>مرحباً بكم في PlantCare AI. نحن ملتزمون بأعلى معايير الخصوصية وأمان البيانات. توضح سياسة الخصوصية هذه بشفافية كيفية معالجة وإرسال البيانات لتتوافق مع متطلبات Google Play لتوفير بيئة استخدام آمنة وموثوقة.</p>
+        <h2>1. Local-First Architecture / الأولوية للتخزين المحلي</h2>    
+        <p>PlantCare AI is designed with a strict <strong>Local-First</strong> approach. We do <strong>not</strong> use Firebase, background trackers, or any hidden third-party analytics SDKs. Your personal data is your own.</p>
+        <div class="arabic-text">
+            تم تصميم التطبيق ببنية تعطي الأولوية للتخزين المحلي (Local-First). نحن لا نستخدم Firebase، أدوات تتبع خفية، أو أي أدوات تحليل تابعة لطرف ثالث لجمع بياناتك في الخلفية. بياناتك الشخصية ملك لك وحدك.
+        </div>
     </section>
 
     <section class="section-card">
-        <h2>Data Safety & Transmission / سلامة ونقل البيانات</h2>
-        <p>Unlike static local-only apps, PlantCare AI utilizes network-based features to identify plants, analyze health, and support development. Here is the accurate breakdown of our data safety actions:</p>
-        
-        <h3>1. Photos & Captured Images / الصور الملتقطة</h3>
-        <p><strong>Data Type:</strong> Photos and video frames.</p>
-        <p><strong>Handling:</strong> When you capture/upload a plant photo to scan or analyze its health, this image is transmitted securely over HTTPS directly to your selected third-party AI service (e.g., Google Gemini, OpenRouter, or OpenAI).</p>
-        <p><strong>Retention:</strong> The application publisher does not collect, receive, or store your photos on any proprietary servers. The chosen AI services handle images according to their respective privacy terms.</p>
-
-        <h3>2. Text Prompts & User Queries / المدخلات النصية</h3>
-        <p><strong>Data Type:</strong> User text messages and plant health questions.</p>
-        <p><strong>Handling:</strong> Text messages entered in the AI Doctor screen are sent over secure network connections to process appropriate diagnoses and recommend treatment actions.</p>
-        <p><strong>Retention:</strong> Plant diaries and clinical histories are saved strictly off-line in your device's private local state. Only the active context prompts are sent to selected AI services.</p>
-
-        <h3>3. Device Identifiers & Performance Logs / معرفات الأجهزة والتحليلات</h3>
-        <p><strong>Data Type:</strong> Device IDs, approximate IP, ad interaction metrics, and crash diagnostics.</p>
-        <p><strong>Handling:</strong> If mobile ads are present, Google AdMob and Firebase services may gather anonymous device identifiers (such as Android Advertising ID - AAID) and performance events to serve suitable, non-intrusive advertisements and monitor application crashes.</p>
+        <h2>2. Data Security & Processing / أمان ومعالجة البيانات</h2>
+        <ul>
+            <li><strong>Local Encryption (AES-256):</strong> All local data, including your plant diaries, AI keys, and care guides, are encrypted on your device using military-grade AES-256 encryption. We have no access to it.</li>
+            <li><strong>Image Processing & EXIF Stripping:</strong> Before any plant photo is sent to the chosen AI provider (e.g., OpenRouter, OpenAI, Gemini), the app automatically strips all metadata, including GPS location and EXIF data, to protect your privacy. Only the pixel data is sent.</li>
+        </ul>
     </section>
 
     <section class="section-card">
-        <h2>Security & Local Storage / التشغيل والتخزين المحلي</h2>
-        <h3>Encryption & Keys:</h3>
-        <p>If you provide a personal API key for custom AI setups, the key is encrypted using AES-256 and stored using secure Capacitor native persistent containers. It is never exposed or collected.</p>
-        <h3>Offline Records:</h3>
-        <p>All details about your personal local plant library, custom watering timer preferences, and reminder logs are stored offline inside standard private storage.</p>
+        <h2>3. The Absolute Right to be Forgotten / الحق المطلق في النسيان</h2>
+        <p>In compliance with GDPR and global privacy standards, you have the absolute right to wipe your digital footprint from this app.</p>
+        <p>You can permanently purge all stored diaries, encrypted databases (IndexedDB), and API keys locally with a single tap by navigating to: <strong>Settings > Clear All Data</strong>.</p>
+        <div class="arabic-text">
+            وفقاً قوانين الخصوصية العالمية (GDPR)، لديك "الحق المطلق في النسيان". يمكنك مسح بصمتك الرقمية بالكامل والتخلص الجذري من كافة السجلات، قواعد البيانات المشفرة محلياً، ومفاتيح API بنقرة واحدة من خلال الانتقال إلى: <strong>الإعدادات > مسح كافة البيانات</strong>.
+        </div>
+    </section>
+
+    <section class="section-card disclaimer-box">
+        <h2>4. Medical & Agricultural Disclaimer / إخلاء المسؤولية المادي والزراعي</h2>
+        <p>The diagnostics, care advice, and chemical recommendations provided by PlantCare AI are generated by artificial intelligence and are intended for informational purposes only. The AI may hallucinate or provide incorrect guidance.</p>
+        <p><strong>DISCLAIMER OF LIABILITY:</strong> The app developer explicitly disclaims all liability for any agricultural, material, or financial losses, plant death, or physical harm resulting from the use of the app's AI suggestions. You must consult a certified local agricultural engineer and read all chemical pesticide labels before application. <strong>By using this app, you assume 100% of the risk.</strong></p>
+        <div class="arabic-text">
+            النصائح الطبية ومقترحات المبيدات الكيميائية مقدمة بواسطة الذكاء الاصطناعي وقد تكون غير دقيقة. يُخلي المطور مسؤوليته الكاملة والمادية عن أي أضرار زراعية، موت للنباتات، أو خسائر مالية تنتج عن تطبيق هذه النصائح. يجب عليك استشارة مهندس زراعي محلي وتحمل المسؤولية الكاملة عند استخدام أي مواد كيميائية. المستخدِم يتحمل المخاطرة بنسبة 100%.
+        </div>
     </section>
 
     <section class="section-card">
-        <h2>Affiliate Disclosure / برنامج التسويق بالعمولة</h2>
-        <p>PlantCare AI is a participant in the Amazon Services LLC Associates Program. Recommended items in our Smart Store are generated using affiliate tags. If you make purchases via these outbound links, we may earn a small referral commission at no additional cost to you. This support helps fund ongoing maintenance and improvements.</p>
-    </section>
-
-    <section class="section-card">
-        <h2>Changes / تغييرات السياسة</h2>
-        <p>We reserve the right to refine this policy to reflect any regulatory changes. Since the app functions locally, subsequent updates will deliver policy revisions directly inside the app.</p>
+        <h2>5. Advertising (AdMob)</h2>
+        <p>If advertisements are enabled, the app uses Google AdMob which may collect anonymous device identifiers to serve non-intrusive ads. Ad interactions rely solely on standard AdMob SDKs without any custom background tracking from our side.</p>
     </section>
 </main>    
 <footer class="footer">    
